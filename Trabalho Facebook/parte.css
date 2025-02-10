@@ -1,0 +1,447 @@
+
+.linha {
+    position: fixed;
+    top: 165px; /* Logo abaixo do cabeçalho */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centralizar corretamente */
+    width: 60%; /* Mantém a mesma largura do menu */
+    height: 2px;
+    background-color: #ccc;
+    z-index: 999;
+}
+
+
+body {
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+/* Cabeçalho com imagem ocupando toda a largura */
+.header-container {
+    width: 70%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
+/* Seção da logo e frase */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Logo redonda */
+.logo {
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+/* Texto ao lado da logo */
+.logo-text {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    max-width: 500px;
+}
+
+/* Layout das postagens lado a lado */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 200px; /* Evita sobreposição com o cabeçalho fixo */
+}
+
+/* Cabeçalho */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin-left: -200px;
+}
+
+/* Foto de perfil */
+.header img {
+    width: 143px;
+    height: 143px;
+    border-radius: 50%;
+}
+
+/* Texto */
+.text {
+    text-align: left;
+}
+
+.text h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #666;
+}
+.menu {
+    position: fixed;
+    top: 170px; /* Logo abaixo da linha */
+    left: 50%; /* Centraliza em relação ao viewport */
+    transform: translateX(-50%); /* Ajusta para centralizar corretamente */
+    width: 100%; /* Igual à largura da linha */
+    background: white;
+    display: flex;
+    justify-content: center; /* Alinha os itens à esquerda */
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 15px; /* Mantém o espaçamento dos links */
+    color: #999494;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu .active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-family: "Roboto", serif;
+    background-color: #F2F4F7;
+}
+header{
+    background: linear-gradient(to bottom, lightgray, white);
+    height: 73%;
+    
+}
+.sss{
+    display: flex;
+    flex-direction: row;
+}
+.cabeçalho{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.campus{
+    width: 85%;
+    height: 100%;
+    border-radius: 3%;
+   
+}
+.perfil{
+    position: absolute;
+    bottom: -100px;
+    left: 20%;
+    transform: translateX(-62%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+    
+}
+.def_e_btn{
+    display: flex;
+
+}
+.definicao{
+    margin-left: 25%;
+}
+.definicao > h1{
+    margin-bottom: 1%;
+    font-size: 40px;
+}
+.definicao > h6{
+    margin-top: 0;
+    color: #606366;
+    
+}
+.botoes{
+    margin-top: 50px;
+    margin-left: 120px;
+
+}
+.botoes > div{
+    display: inline-block;
+}
+.curtir{
+    margin-left:156px ;
+    margin-top: 12px;
+    background-color: #e2e5e9;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-weight: bold;
+}
+.ligar{
+    padding: 5px;
+    background-color: #0861F2;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+.mensagem{
+    background-color: #e2e5e9;
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.line{
+    border-top: 1px solid rgb(214, 213, 213);
+    width: 80%;
+    margin: auto;
+    padding-top: 12px;
+    padding-left: 7px;
+    margin-bottom:7px ;
+    
+}
+.opcoes{
+    color: #606366;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 14px;   
+}
+
+.line > nav > a{
+
+    color: rgb(70, 69, 69);
+    text-decoration: none;
+    padding: 7px;
+    margin-left: 15px;
+}
+#post{
+    color: #0866FF;   
+    border-bottom: 4px solid #0866FF;
+    border-radius: 4px;
+}
+.conteiner2{
+    height: 60%;
+    width: 50%;
+    background-color: white;
+    margin-left: 10%;
+    border-radius: 5%;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+#trespontos{
+    background-color: #D6D9DD;
+    height: 10px;
+    margin-left: 43%;
+    font-weight: bolder;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.apresentacao{
+    margin-left: 15px;
+    text-align: left;
+
+}
+#texto{
+    text-align: center;
+    
+}
+.imagens{
+    margin-left: 10px;
+    text-align: left;
+}
+.posts{
+    width: 75%;
+    height: 50px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+}
+.post{
+    margin-top: 15px;
+    margin-left:10px ;
+}
+.filtros{
+    width: 30%;
+    height: 25px;
+    background-color: #e2e5e9;
+    margin-left: 450px;
+    margin-right: 3px;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.post1{
+    width: 75%;
+    height: 50%;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+.post2{
+    width: 75%;
+    height: 50%;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+.titulo{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 2px;
+    margin-bottom: 3px;
+   
+
+}
+b{
+    color: gray;
+    font-weight: 300;
+}
+.perfil_post{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline block;
+    margin-right: 10px;
+    padding: 2px;
+    margin-top: 8px;
+}
+.ysla{
+    width: 350px;
+    height: 280px;
+    margin-left: 3px;
+}   
+.iasmin{
+    width: 260px;
+    height: 200px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+.emojis{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.curtidas{
+    margin-left: 2px;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 0px;
+    
+
+}
+.barra{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: rgb(114, 113, 113);
+    font-weight: 400;
+}
+.barracinza{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(202, 198, 198);
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.icones{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: 50px;
+}
+.perfilbarra{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.post2img{
+    width: 100%;
+}
